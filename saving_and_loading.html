@@ -45,40 +45,32 @@
 						<p>Saving and loading has just been implemented. When you create a save, you can rename them to any string of text you would like. 
 							Created saves are then taken through the character creation menu, and the player will need to save the game at some point before quitting to maintain the new save. 
 							When loading from the main menu, the game will open to the spot where the player saved. Data that are maintained when saved are as follows:</p>
-
-    Player data:
-
-
-        Details about coloration, name, clan.
-        Character position
-        Inventory items
-        Equipped items
-        Learned recipes
-        Active quests
-
-    NPC data:
-        Position
-        Last requested item and quantity
-        Previous question posed in dialogue
-    Time:
-        The current time is saved, then time will be recalculated based on it. Takes a minute to update in the menu.
-
-    Tile set: This is where the real doozy lies. The tileset has a custom node for every single tile in the game with data associated (this is what you see when you right-click a tile and inspect). It also has every plant's data in a dictionary in this node. Data that are saved and loaded:
-
-
-        Tile data, including a huge list of information such as sprite sheet and atlas coordinates.
-        Every plant is saved then reinstantiated upon loading.
-        This process takes the most computation time and is the reason why "saving game..." last ~8-9 seconds. In the future, I will rewrite this code in a faster language but once I do that the game will not be playable in browser, so I want to maintain that as long as possible.
-						<div class="row">
-							<div class="row-6 row-12-mobilep">
-								<h3>And now a subheading</h3>
-								<p>Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae lorem ipsum adipiscing ac. Vivamus ornare laoreet odio vis praesent.</p>
-							</div>
-							<div class="row-6 row-12-mobilep">
-								<h3>And another subheading</h3>
-								<p>Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae lorem ipsum adipiscing ac. Vivamus ornare laoreet odio vis praesent.</p>
-							</div>
-						</div>
+						<h4>Player data:</h4>
+						<ul>
+							<li>Details about coloration, name, clan.</li>
+							<li>Character position</li>
+							<li>Inventory items</li>
+							<li>Equipped items</li>
+							<li>Learned recipes</li>
+							<li>Active quests</li>
+						</ul>
+						<h4>NPC data:</h4>
+						<ul>
+							<li>Position</li>
+							<li>Last requested item and quantity</li>
+							<li>Previous question posed in dialogue</li>
+						</ul>
+						<h4>Time:</h4>
+						<ul>
+							<li>The current time is saved, then time will be recalculated based on it. Takes a minute to update in the menu.</li>
+						</ul>
+						<h4>Tile set: This is where the real doozy lies. The tileset has a custom node for every single tile in the game with data associated (this is what you see when you right-click a tile and inspect). 
+							It also has every plant's data in a dictionary in this node. Data that are saved and loaded:</h4>
+						<ul>
+							<li>Tile data, including a huge list of information such as sprite sheet and atlas coordinates.</li>
+							<li>Every plant is saved then reinstantiated upon loading.</li>
+							<li>This process takes the most computation time and is the reason why "saving game..." last ~8-9 seconds. In the future, I will rewrite this code in a faster language but once I do that the game will not be playable in browser, so I want to maintain that as long as possible.</li>
+						</ul>
 					</div>
 				</section>
 
