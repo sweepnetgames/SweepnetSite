@@ -36,8 +36,11 @@
 			<!-- Main -->
 				<section id="main" class="container">
 					<header>
-						<h2>Saving and loading</h2>
-						<p>A necessary addition for any game.</p>
+						<h2>Changes post game jam</h2>
+						<p>First of all, I want to give a heartfelt thank you to everyone that took the time to give feedback during the FarmJam 2024. It means a lot that so many people were willing to try multiple times despite crashes and annoyances to give this game a fair shot. There were a lot of people that took a look at this game and I am very grateful. 
+							I have removed the previous version of the game from the jam given that I got a ton of feedback and have a concrete direction to go in, and since there were some glaring issues I don't expect many folk to make it past them. 
+							If you did not get a chance to rate the game, check back once the jam ends and you'll be able to play a more refined version. In the meantime please play someone else's game, there are a number without many ratings. 
+							If you are eager to play, you can download this version at the bottom of this post.
 					</header>
 					<div class="box">
 						<span class="image featured"><img src="images/SaveLoad.gif" alt="" /></span>
