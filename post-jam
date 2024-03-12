@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<title>About Sweepnet Games</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1><a href="index.html">Sweepnet</a> Games</h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#" class="icon solid fa-angle-down">More information</a>
+								<ul>
+									<li><a href="about.html">About</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="elements.html">Elements</a></li>
+									<li>
+										<a href="#">Devlog</a>
+										<ul>
+											<li><a href="saving_and_loading.html">Saving and Loading</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#" class="button">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2>Saving and loading</h2>
+						<p>A necessary addition for any game.</p>
+					</header>
+					<div class="box">
+						<span class="image featured"><img src="images/SaveLoad.gif" alt="" /></span>
+						<h3>Overview</h3>
+						<p>Saving and loading has just been implemented. When you create a save, you can rename them to any string of text you would like. 
+							Created saves are then taken through the character creation menu, and the player will need to save the game at some point before quitting to maintain the new save. 
+							When loading from the main menu, the game will open to the spot where the player saved. Data that are maintained when saved are as follows:</p>
+						<h4>Player data:</h4>
+						<ul>
+							<li>Details about coloration, name, clan.</li>
+							<li>Character position</li>
+							<li>Inventory items</li>
+							<li>Equipped items</li>
+							<li>Learned recipes</li>
+							<li>Active quests</li>
+						</ul>
+						<h4>NPC data:</h4>
+						<ul>
+							<li>Position</li>
+							<li>Last requested item and quantity</li>
+							<li>Previous question posed in dialogue</li>
+						</ul>
+						<h4>Time:</h4>
+						<ul>
+							<li>The current time is saved, then time will be recalculated based on it. Takes a minute to update in the menu.</li>
+						</ul>
+						<h4>Tile set: This is where the real doozy lies. The tileset has a custom node for every single tile in the game with data associated (this is what you see when you right-click a tile and inspect). 
+							It also has every plant's data in a dictionary in this node. Data that are saved and loaded:</h4>
+						<ul>
+							<li>Tile data, including a huge list of information such as sprite sheet and atlas coordinates.</li>
+							<li>Every plant is saved then reinstantiated upon loading.</li>
+							<li>This process takes the most computation time and is the reason why "saving game..." last ~8-9 seconds. In the future, I will rewrite this code in a faster language but once I do that the game will not be playable in browser, so I want to maintain that as long as possible.</li>
+						</ul>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
