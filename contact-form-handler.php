@@ -9,6 +9,7 @@ if(empty($_POST['name'])  ||
 }
 
 $name = $_POST['name']; 
+$subject = $_POST['subject'];
 $email_address = $_POST['email']; 
 $message = $_POST['message']; 
 
