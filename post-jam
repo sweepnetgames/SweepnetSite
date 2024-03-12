@@ -43,37 +43,50 @@
 							If you are eager to play, you can download this version at the bottom of this post.
 					</header>
 					<div class="box">
-						<span class="image featured"><img src="images/SaveLoad.gif" alt="" /></span>
-						<h3>Overview</h3>
-						<p>Saving and loading has just been implemented. When you create a save, you can rename them to any string of text you would like. 
-							Created saves are then taken through the character creation menu, and the player will need to save the game at some point before quitting to maintain the new save. 
-							When loading from the main menu, the game will open to the spot where the player saved. Data that are maintained when saved are as follows:</p>
-						<h4>Player data:</h4>
+						<span class="image featured"><img src="images/QuestJournal;.png" alt="" /></span>
+						<h3>Now for the update:</h3>
+						<p>I have spent quite awhile this past week on squashing bugs, adding UI optimizations for ease of use, and have made a few pieces of additional content. I tried to focus a lot on the quest and on crafting, 
+							since that seemed to be a bottleneck for folks trying out the game.</p>
+						<h4>First, bug fixes:</h4>
 						<ul>
-							<li>Details about coloration, name, clan.</li>
-							<li>Character position</li>
-							<li>Inventory items</li>
-							<li>Equipped items</li>
-							<li>Learned recipes</li>
-							<li>Active quests</li>
+							<li>Fixed an issue where tile coloration didn't change when a water tile was expanded.</li>
+							<li>Fixed some problems with the coyote fight</li>
+							<li>Rebalanced combat pacing - attacks are much slower now.</li>
+							<li>Fixed the issue where the inventory would get full and then stay locked full despite clearing room.</li>
+							<li>Plants planted during the quest were not being saved, they are now.</li>
+							<li>Items that were placed on the ground were not being saved (fence posts, etc.)</li>
+							<li>Right click -> attack has been implemented</li>
 						</ul>
-						<h4>NPC data:</h4>
+						<h4>Now for content that has been updated or adjusted:</h4>
 						<ul>
-							<li>Position</li>
-							<li>Last requested item and quantity</li>
-							<li>Previous question posed in dialogue</li>
+							<li>Quest progress is now non-linear, meaning doing some tasks for the uncle then some for the cousin will not interrupt or affect the other.</li>
+							<li>Right-clicking on items to craft in the crafting interfaces now shows the requirements</li>
+							<li>Added icons for the inventory and equipment tabs</li>
+							<li>Added a combat tab that allows you to choose whether the player auto-retaliates to attacks.</li>
+							<li>Added projectiles, and a way to calculate ranged damage.</li>
+							<li>Added numbers that show how much damage is taken and received. This number is after defensive calculations, so the number that has an affect on hp.</li>
+							<li>Added a special defense, where if the equipped imbued bead are the same typing as the enemy attack, all damage will be mitigated. I will be making another post explaining how imbuing works at some point.</li>
+						
+						<span class="image featured"><img src="images/defense.gif" alt="" /></span>
+						<li>Similarly, added a special attack that is either blocked by the opponent or the attack is enhanced.</li>
+						<span class="image featured"><img src="images/attack.gif" alt="" /></span>
 						</ul>
-						<h4>Time:</h4>
+						<h4>Completely new additions:</h4>
 						<ul>
-							<li>The current time is saved, then time will be recalculated based on it. Takes a minute to update in the menu.</li>
+							<li>As you saw above, a new mayfly enemy. It shoots water and will be featured in the upcoming quest.</li>
+						<span class="image featured"><img src="images/mayfly.gif" alt="" /></span>
+						<li>Added a new tile type, traps! This will be useful for what I am planning for the upcoming quest and also for creating unique obstacles later on. The featured trap is a corrupted grass that an enemy will use to damage the player.</li>
+						<span class="image featured"><img src="images/trap_tile.gif" alt="" /></span>
+						<li>Added a grasshopper herbivore (not enemy) that can be imbued for another special attack.</li>
+						<li>Added a quest journal that informs the player where they are in progressing the quest. I think this will be useful for orienting the player to what is next and reminding them if they took a break from the quest. </li>
 						</ul>
-						<h4>Tile set: This is where the real doozy lies. The tileset has a custom node for every single tile in the game with data associated (this is what you see when you right-click a tile and inspect). 
-							It also has every plant's data in a dictionary in this node. Data that are saved and loaded:</h4>
+						<h4>Next steps:</h4>
 						<ul>
-							<li>Tile data, including a huge list of information such as sprite sheet and atlas coordinates.</li>
-							<li>Every plant is saved then reinstantiated upon loading.</li>
-							<li>This process takes the most computation time and is the reason why "saving game..." last ~8-9 seconds. In the future, I will rewrite this code in a faster language but once I do that the game will not be playable in browser, so I want to maintain that as long as possible.</li>
+							<li>As mentioned, I have some big plans for another quest. This quest will be a tutorial for the combat system and serve to help the player understand imbues and attack and defense typing. There will be a boss, and some neat rewards!</li>
+							<li>I still have a long way to go in terms of helping the player understand how to use all of the tools and make it clearer what is actually possible in the game. I have some ideas for this but am also open to suggestions.</li>
+							<li>I still need to make the player die, and create logic for player and enemy respawns.</li>
 						</ul>
+						<h4>Thanks for reading and I will see you next time!</h4>
 					</div>
 				</section>
 
