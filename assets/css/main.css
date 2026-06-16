@@ -2139,7 +2139,7 @@ input, select, textarea {
 				height: 141px;
 				margin-top: -70px;
 				background: url("images/bracket.svg");
-				opacity: 0.15;
+				opacity: 0;
 			}
 
 			#banner > .container:before {
