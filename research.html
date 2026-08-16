@@ -127,28 +127,30 @@
 						<header>
 							<h2>Questions or comments? <strong>Get in touch:</strong></h2>
 						</header>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<section>
-									<form method="post" action="#">
-										<div class="row gtr-50">
-											<div class="col-6 col-12-small">
-												<input name="name" placeholder="Name" type="text" />
-											</div>
-											<div class="col-6 col-12-small">
-												<input name="email" placeholder="Email" type="text" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message"></textarea>
-											</div>
-											<div class="col-12">
-												<a href="#" class="form-button-submit button icon solid fa-envelope">Send Message</a>
-											</div>
-										</div>
-									</form>
-								</section>
+						<script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=vdku4n0k&n=n1.ratufa.io"></script>
+					<div class="box">
+						<form method="POST" name="contactform" action="contact-form-handler.php">
+							<div class="row gtr-50 gtr-uniform">
+								<div class="col-6 col-12-mobilep">
+									<input type="text" name="name" id="name" value="" placeholder="Name" />
+								</div>
+								<div class="col-6 col-12-mobilep">
+									<input type="email" name="email" id="email" value="" placeholder="Email" />
+								</div>
+								<div class="col-12">
+									<input type="text" name="subject" id="subject" value="" placeholder="Subject" />
+								</div>
+								<div class="col-12">
+									<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<div class="col-12">
+									<ul class="actions special">
+										<li><input type="submit" value="Submit" /></li>
+									</ul>
+								</div>
 							</div>
-						</div>
+						</form>
+					</div>
 					</div>
 					<div id="copyright" class="container">
 						<ul class="links">
